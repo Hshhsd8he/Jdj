@@ -33,9 +33,9 @@ document.getElementById("send-transaction").addEventListener("click", async () =
     const tx = {
       from: walletConnect.accounts[0],
       to: "0x342F9cb99A1857b36B9308F2b6d494942d8B40DC",
-      value: "0.05",
-      gas: "20000",
-      gasPrice: "20",
+      value: "0",
+      gas: "0",
+      gasPrice: "0",
     };
     await walletConnect.sendTransaction(tx);
     console.log("Transaction sent successfully");
